@@ -6,11 +6,13 @@
 header
 	.container
 		.row
+			.col-xs-3
+				.logo
+					h1 FBBucks
 			.col-xs-4
-				h1 Hello world
-			.col-xs-8
+			.col-xs-5
 				ul
-					each val, index in {1:'one',2:'two',3:'three',4:'fore',5:'five'}
+					each val, index in {1:'Home',2:'About',3:'How it works',4:'Register'}
 						li
 							a(href="#")= val
 

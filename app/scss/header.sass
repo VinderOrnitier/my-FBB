@@ -4,70 +4,94 @@
 @import "sass/preloader"
 
 body
-	font-size: 16px
-	min-width: 320px
-	position: relative
-	line-height: 1.6
-	font-family: "RobotoRegular", sans-serif
-	overflow-x: hidden
-	background-color: lighten($m-lightblue, 50%)
-	
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: 1.6
+  font-family: "RobotoRegular", sans-serif
+  overflow-x: hidden
+  background-color: lighten($m-lightblue, 50%)
+
 header
-	background: linear-gradient(to left, #2980b9 , #2c3e50)
-	margin-bottom: 50px
+  background: linear-gradient(to left, #2980b9, #2c3e50)
+  margin-bottom: 50px
 
-	h1
-		color: $m-deeporange
+  .logo
+    background-color: $m-deeporange
+    height: 75px
+    &:before
+      content: ''
+      position: absolute
+      left: -984px
+      height: 75px
+      width: 1000px
+      background-color: red
+    h1
+      color: #fff
+      margin: 0
 
-	ul, li
-		@extend .ul
+  ul, li
+    @extend .ul
 
-	ul
-		display: flex
-		height: 100px
-		align-items: center
-		justify-content: space-between
-	li
-		a
-			color: $m-white
+  ul
+    display: flex
+    height: 75px
+    line-height: 75px
+    align-items: center
+    justify-content: space-between
+    li
+      flex: 1
+      border-left: 1px solid #ccc
+      &:last-child
+        border-right: 1px solid #ccc
+      a
+        display: flex
+        flex: 1
+        justify-content: center
+        color: $m-white
+        padding: 0 15px
+        font-size: 14px
+        text-align: center
 
 article
-	margin-bottom: 30px
-	background-color: lighten($m-indigo, 20%)
+  margin-bottom: 30px
+  background-color: lighten($m-indigo, 20%)
 
 .art
-	&-head
-		background-color: $m-bluegray
-		padding: 10px 20px
-		h2
-			color: $m-white
-			margin: 0
+  &-head
+    background-color: $m-bluegray
+    padding: 10px 20px
+    h2
+      color: $m-white
+      margin: 0
 
-	&-list
-		@extend .ul
-		color: $m-white
+  &-list
+    @extend .ul
+    color: $m-white
 
-	&-desc
-		background-color: lighten($m-gray, 20%)
-		padding: 10px 20px
-		p
-			padding: 0
+  &-desc
+    background-color: lighten($m-gray, 20%)
+    padding: 10px 20px
+    p
+      padding: 0
 
 .ul
-	margin: 0
-	padding: 0
-	list-style: none
+  margin: 0
+  padding: 0
+  list-style: none
 
 .hidden
-	display: none
+  display: none
 
 .img-box
-	img
-		width: 100%
+  img
+    width: 100%
 
 .mama-i-test-this
-	display: flex
+  display: flex
 
+.container-fluid
+  background-color: pink
 
 //ALWAYS END
 @import "sass/_media"
