@@ -1,80 +1,61 @@
 .my-preloader.hidden
-	.loader
-		- for (var x = 0; x < 25; x++)
-			div
+    .loader
+        - for (var x = 0; x < 25; x++)
+        div
 
 header
-	.container
-		.row
-			.col-xs-3
-				.logo
-					h1 FBBucks
-			.col-xs-4
-			.col-xs-5
-				ul
-					each val, index in {1:'Home',2:'About',3:'How it works',4:'Register'}
-						li
-							a(href="#")= val
+    .container
+        .row
+            .col-sm-3
+                .logo
+                    h1 FBBucks
+            .col-sm-4
+            .col-sm-5
+                ul
+                    each val, index in {1:'Home',2:'About',3:'How it works',4:'Register'}
+                        li
+                            a(href="#")= val
 
+    .container-fluid.cta-container
+        .row
+            .col-sm-8.col-sm-offset-2
+                .cta-wrapper
+                    hgroup
+                        h1
+                            | Earn
+                            span  Mony
+                            |  from <br> Your Facebook Account
+                        h3 Get cash quickly, receive $100 simply by having a Fasebook account. Register today!
+                        a(href="#").m-btn Register now
+section
+    .container
+        .row
+            .col-sm-12
+                .section-title
+                    h2 Get your cash in three simple steps
 main
-	.container
-		.row
-			.table-signa
-				table(style="width:450px;border-collapse:collapse;border-spacing:0;font-size:13px;line-height:20px;padding:0px;margin:0px;font-family:Helvetica, 'Helvetica CY', 'Helvetica Neue', Arial, sans-serif;background:#fff;border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;"
-				cellspacing="0" cellpadding="0")
-					tr
-						td(rowspan='8' style='padding-right: 10px')
-							img.avatar(src='./img/avatar.png' width="140" height="140" alt='alt')
-						td(colspan='2' style='padding-top: 5px')
-							img(src='./img/Intend-logo.jpg' align="right" width="95" height="37" alt='alt')
-					tr
-						td(colspan='2' style="font-size:18px;line-height:24px;")
-							p(style="margin: 0px") My name is Boris
-					tr
-						td(colspan='2' style="font-size:16px;line-height:20px;padding-bottom: 10px")
-							p(style="margin: 0px") My position is manager
-					tr
-						td(style="padding-right: 10px")
-							p(style="margin: 0px") phone
-						td
-							p(style="margin: 0px") +38 (093) 937-99-92
-					tr
-						td(style="padding-right: 10px")
-							p(style="margin: 0px") email
-						td
-							p(style="margin: 0px") grisha@intend.kiev.ua
-					tr
-						td(style="padding-right: 10px")
-							p(style="margin: 0px") address
-						td
-							p(style="margin: 0px") Ukraine, Kyiv, 10b Vozdvyzhenska Str
-					tr
-						td(style="padding-right: 10px")
-							p(style="margin: 0px") site
-						td
-							p(style="margin: 0px") intend.kiev.ua
-					tr
-						td(colspan='2' style="color: transparent")
-							p(style="margin: 0px") empty
 
-		mixin artical
-			article
-				.row
-					.col-xs-12
-						.art-head
-							h2 Look Pa, I'm html-developer!
-				.row
-					.col-xs-8
-						.img-box
-							img(src="/img/2.jpg" alt="cat")
-					.col-xs-4
-						ul.art-list
-							each val, index in ['The Beatles', 'The Rolling Stones', 'U2', 'The Grateful Dead', 'Velvet Underground', 'Led Zeppelin']
-								li= val
+    .container
+        .row
 
-					.col-xs-12
-						.art-desc
-							p Mama oooooooooo no!
-		//- Use
-		+artical
-		+artical
+        mixin artical
+            article
+                .row
+                    .col-xs-12
+                        .art-head
+                            h2 Look Pa, I'm html-developer!
+                .row
+                    .col-xs-8
+                        .img-box
+                            img(src="/img/2.jpg" alt="cat")
+                    .col-xs-4
+                        ul.art-list
+                            each val, index in ['The Beatles', 'The Rolling Stones', 'U2', 'The Grateful Dead', 'Velvet Underground', 'Led Zeppelin']
+                                li= val
+
+                    .col-xs-12
+                        .art-desc
+                            p Mama oooooooooo no!
+        //- Use
+        +artical
+        +artical

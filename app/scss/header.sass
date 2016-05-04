@@ -5,16 +5,16 @@
 
 body
   font-size: 16px
+  color: $m-text
   min-width: 320px
   position: relative
   line-height: 1.6
-  font-family: "RobotoRegular", sans-serif
+  font-family: "Roboto", sans-serif
   overflow-x: hidden
   background-color: lighten($m-lightblue, 50%)
 
 header
-  background: linear-gradient(to left, #2980b9, #2c3e50)
-  margin-bottom: 50px
+  background-color: $m-white
 
   .logo
     background-color: $m-deeporange
@@ -25,10 +25,11 @@ header
       left: -984px
       height: 75px
       width: 1000px
-      background-color: red
+      background-color: $m-deeporange
     h1
       color: #fff
       margin: 0
+      line-height: 75px
 
   ul, li
     @extend .ul
@@ -41,17 +42,74 @@ header
     justify-content: space-between
     li
       flex: 1
-      border-left: 1px solid #ccc
+      border-left: 1px solid $m-devider
+
       &:last-child
-        border-right: 1px solid #ccc
+        border-right: 1px solid $m-devider
       a
         display: flex
         flex: 1
         justify-content: center
-        color: $m-white
-        padding: 0 15px
-        font-size: 14px
+        color: $m-text
+        padding: 0 10px
+        font-size: 12px
+        font-weight: 700
         text-align: center
+        text-transform: uppercase
+
+        &:hover
+          color: $m-deeporange
+          text-decoration: none
+
+  hgroup
+    text-align: center
+    h1
+      font-size: 62px
+      line-height: 1.2
+      margin: 0
+      span
+        color: $m-deeporange
+    h3
+      margin: 10px 0 25px
+      font-weight: 500
+
+.cta-container
+  background: url('../img/bg-1.jpg') no-repeat center
+  background-size: cover
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    background-color: rgba(255, 255, 255, 0.5)
+    left: 0
+    top: 0
+    right: 0
+    bottom: 0
+    display: block
+
+.cta-wrapper
+  height: 70vh
+  display: flex
+  justify-content: center
+  align-items: center
+
+
+.m-btn
+  background-color: #464646
+  color: white
+  text-transform: uppercase
+  padding: 15px 50px
+  display: inline-block
+  &:hover
+    color: $m-deeporange
+    text-decoration: none
+
+.section-title
+  text-align: center
+  h2
+    border-bottom: 2px dotted $m-sec-dot
+    display: inline-block
+    padding: 0px 20px
 
 article
   margin-bottom: 30px
@@ -89,9 +147,6 @@ article
 
 .mama-i-test-this
   display: flex
-
-.container-fluid
-  background-color: pink
 
 //ALWAYS END
 @import "sass/_media"

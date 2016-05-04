@@ -83,12 +83,12 @@ gulp.task('image',function(){
                 this.emit('end');
             }
         }))
-        .pipe(cache(imagemin({  // Сжимаем их с наилучшими настройками с учетом кеширования
-            interlaced: true,
-            progressive: true,
-            svgoPlugins: [{removeViewBox: false}],
-            use: [pngquant()]
-        })))
+        //.pipe(cache(imagemin({  // Сжимаем их с наилучшими настройками с учетом кеширования
+        //    interlaced: true,
+        //    progressive: true,
+        //    svgoPlugins: [{removeViewBox: false}],
+        //    use: [pngquant()]
+        //})))
         .pipe(gulp.dest('dist/img'));
 });
 
