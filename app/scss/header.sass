@@ -1,0 +1,73 @@
+@import "bourbon/_bourbon"
+@import "sass/_vars"
+@import "sass/fonts"
+@import "sass/preloader"
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: "RobotoRegular", sans-serif
+	overflow-x: hidden
+	background-color: lighten($m-lightblue, 50%)
+	
+header
+	background: linear-gradient(to left, #2980b9 , #2c3e50)
+	margin-bottom: 50px
+
+	h1
+		color: $m-deeporange
+
+	ul, li
+		@extend .ul
+
+	ul
+		display: flex
+		height: 100px
+		align-items: center
+		justify-content: space-between
+	li
+		a
+			color: $m-white
+
+article
+	margin-bottom: 30px
+	background-color: lighten($m-indigo, 20%)
+
+.art
+	&-head
+		background-color: $m-bluegray
+		padding: 10px 20px
+		h2
+			color: $m-white
+			margin: 0
+
+	&-list
+		@extend .ul
+		color: $m-white
+
+	&-desc
+		background-color: lighten($m-gray, 20%)
+		padding: 10px 20px
+		p
+			padding: 0
+
+.ul
+	margin: 0
+	padding: 0
+	list-style: none
+
+.hidden
+	display: none
+
+.img-box
+	img
+		width: 100%
+
+.mama-i-test-this
+	display: flex
+
+
+//ALWAYS END
+@import "sass/_media"

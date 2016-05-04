@@ -1,0 +1,20 @@
+{
+  "name": "Gulp_Project",
+  "version": "0.0.0",
+  "authors": [
+    "Vinder Ornitier <ornitier62@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "ornitier.ru",
+  "dependencies": {
+    "jquery": "*",
+    "normalize-css": "*",
+    "animate.css": "*",
+    "modernizr": "*",
+    "respond": "*",
+    "waypoints": "*",
+    "magnific-popup": "*"
+
+
+  }
+}
