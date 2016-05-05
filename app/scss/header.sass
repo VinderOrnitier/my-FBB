@@ -17,19 +17,7 @@ header
   background-color: $m-white
 
   .logo
-    background-color: $m-deeporange
-    height: 75px
-    &:before
-      content: ''
-      position: absolute
-      left: -984px
-      height: 75px
-      width: 1000px
-      background-color: $m-deeporange
-    h1
-      color: #fff
-      margin: 0
-      line-height: 75px
+
 
   ul, li
     @extend .ul
@@ -38,14 +26,9 @@ header
     display: flex
     height: 75px
     line-height: 75px
-    align-items: center
     justify-content: space-between
     li
       flex: 1
-      border-left: 1px solid $m-devider
-
-      &:last-child
-        border-right: 1px solid $m-devider
       a
         display: flex
         flex: 1
@@ -58,37 +41,25 @@ header
         text-transform: uppercase
 
         &:hover
-          color: $m-deeporange
+          color: $m-accent
           text-decoration: none
 
   hgroup
-    text-align: center
     h1
-      font-size: 62px
+      font-size: 58px
       line-height: 1.2
       margin: 0
       span
-        color: $m-deeporange
+        color: $m-accent
     h3
       margin: 10px 0 25px
       font-weight: 500
 
-.cta-container
-  background: url('../img/bg-1.jpg') no-repeat center
-  background-size: cover
-  position: relative
-  &:before
-    content: ''
-    position: absolute
-    background-color: rgba(255, 255, 255, 0.5)
-    left: 0
-    top: 0
-    right: 0
-    bottom: 0
-    display: block
+.cta-bg
+  background: url('../img/cta-bg.png') no-repeat right bottom
+  height: 500px
 
 .cta-wrapper
-  height: 70vh
   display: flex
   justify-content: center
   align-items: center

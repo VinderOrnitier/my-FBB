@@ -97,48 +97,6 @@ body textarea:required:valid {
 
 /* Large Devices, Wide Screens */
 
-@media only screen and (min-width: 320px) {
-
-/**/
-
-}
-
-@media only screen and (min-width: 480px) {
-
-/**/
-
-}
-
-@media only screen and (min-width: 768px) {
-
-/**/
-
-}
-
-@media only screen and (min-width: 992px) {
-
-/**/
-
-}
-
-@media only screen and (min-width: 1200px) {
-
-/**/
-
-}
-
-@media only screen and (max-width: 1200px) {
-
-/**/
-
-}
-
-@media only screen and (max-width: 992px) {
-
-/**/
-
-}
-
 @media only screen and (max-width: 768px) {
 
 /*Disable Animation on Mobile Devices*/
@@ -152,18 +110,6 @@ body textarea:required:valid {
 	-webkit-animation: none !important;
 	animation: none !important;
 }
-
-}
-
-@media only screen and (max-width: 480px) {
-
-/**/
-
-}
-
-@media only screen and (max-width: 320px) {
-
-/**/
 
 }
 
