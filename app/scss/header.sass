@@ -9,12 +9,12 @@ body
   min-width: 320px
   position: relative
   line-height: 1.6
-  font-family: "Roboto", sans-serif
+  font-family: 'Lato', sans-serif
   overflow-x: hidden
-  background-color: lighten($m-lightblue, 50%)
 
 header
-  background-color: $m-white
+  .header-top-wrapper
+    margin: 40px 0 120px
 
   .logo
 
@@ -23,21 +23,22 @@ header
     @extend .ul
 
   ul
-    display: flex
-    height: 75px
-    line-height: 75px
-    justify-content: space-between
+    text-align: right
     li
-      flex: 1
+      display: inline-block
+      padding: 0 25px
+
+      &:last-child
+        padding-right: 0
+
       a
-        display: flex
-        flex: 1
-        justify-content: center
+        @extend .trans
+        display: inline-block
         color: $m-text
-        padding: 0 10px
-        font-size: 12px
+        font-size: 14px
+        height: 90px
+        line-height: 90px
         font-weight: 700
-        text-align: center
         text-transform: uppercase
 
         &:hover
@@ -45,47 +46,241 @@ header
           text-decoration: none
 
   hgroup
+    margin-top: 50px
     h1
-      font-size: 58px
+      font-size: 45px
       line-height: 1.2
       margin: 0
-      span
-        color: $m-accent
+      margin-bottom: 50px
+
     h3
       margin: 10px 0 25px
       font-weight: 500
+    a
+      display: inline-block
+      margin-right: 10px
 
 .cta-bg
-  background: url('../img/cta-bg.png') no-repeat right bottom
-  height: 500px
+
+.accent-bg
+  background-color: $m-accent
+
+.cta-top-wrapper
+  height: 470px
 
 .cta-wrapper
-  display: flex
-  justify-content: center
-  align-items: center
 
+.thin-t
+  font-weight: 300
+  
+.alert-c
+  color: $m-red
+
+.accent-t
+  color: $m-accent
 
 .m-btn
-  background-color: #464646
-  color: white
-  text-transform: uppercase
-  padding: 15px 50px
-  display: inline-block
+  @extend .trans
+  padding: 8px 30px
+  color: $m-text
+  border: 2px solid $m-text
+  border-radius: 30px
+
   &:hover
-    color: $m-deeporange
+    border-color: $m-accent
+    color: $m-accent
     text-decoration: none
+    
+.trans
+  transition: all .2s ease-in-out
+
+.ul
+  margin: 0
+  padding: 0
+  list-style: none
+
+.hidden
+  display: none
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .section-title
+  margin-top: 50px
+  margin-bottom: 70px
   text-align: center
+  position: relative
   h2
-    border-bottom: 2px dotted $m-sec-dot
+    font-size: 20px
+    text-transform: uppercase
     display: inline-block
-    padding: 0px 20px
+    padding: 0 32px 40px
+    letter-spacing: 3px
+    font-weight: 400
+
+    background-image: linear-gradient(to right, $m-sec-dot 33%, rgba(255,255,255,0) 0%)
+    background-position: bottom
+    background-size: 9px 3px
+    background-repeat: repeat-x
+
+.arrow-down
+  display: inline-block
+  line-height: 48px
+  font-size: 14px
+  position: absolute
+  top: 85%
+  left: 50%
+  transform: translate(-50%, -50%) rotate(90deg) scaleY(1.5)
+  background-color: $m-white
+
+.description
+  font-size: 19px
+  color: $m-white
+  margin: -30px 0 80px
+
+  &-section
+    background-color: $m-accent
+    margin-top: -90px
+    position: relative
+
+.steps
+
+  &-item
+    text-align: center
+    margin-bottom: 50px
+
+    h3
+      font-size: 15px
+
+    p
+      font-size: 14px
+      color: $m-text-gray
+
+  &-img
+    height: 150px
+    width: 150px
+    margin: 0 auto
+    margin-bottom: 40px
+    background-color: $m-accent
+    text-align: center
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 50%
+
+  &-devider
+    display: inline-block
+    height: 3px
+    width: 50px
+    background-color: $m-accent
+
+.qualif
+
+  &-title
+    text-align: center
+    position: relative
+    margin-bottom: 50px
+
+    h2
+      font-size: 20px
+      font-weight: 400
+      display: inline-block
+      background-color: white
+      position: relative
+      padding: 0 20px
+      z-index: 1
+
+    &:after
+      content: ''
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      display: block
+      width: 100%
+      height: 1px
+      background-color: $m-black
+
+  &-item
+    margin-bottom: 40px
+
+  &-img
+    height: 135px
+    width: 135px
+    border: 2px solid $m-accent
+    display: flex
+    justify-content: center
+    align-items: center
+
+  &-text
+    h4
+      margin: 0 0 10px
+      font-size: 15px
+    p
+      margin: 0
+      font-size: 13px
+      color: $m-text-gray
+
+.input-box
+  margin-bottom: 20px
+  label
+    display: block
+    font-size: 14px
+    font-weight: 700
+    margin-bottom: 15px
+
+    span
+      font-weight: bold
+      font-size: 16px
+
+  input
+    width: 100%
+    padding: 10px 15px
+    border: 1px solid $m-form-gray
+
+.button-submit
+  @extend .trans
+  display: block
+  width: 100%
+  background-color: $m-accent
+  color: #fff
+  border: none
+  border-radius: 5px
+  text-transform: uppercase
+  font-size: 16px
+  padding: 11px 0
+  margin-top: 20px
+
+  &:hover
+    background-color: lighten($m-accent, 20%)
+
+.submit-form
+  margin: 50px 0
+
+footer
+  background-color: $m-footer
+  color: $m-white
+  padding: 30px 0px
+
+.terms
+  float: right
+  color: $m-white
+  &:hover
+    text-decoration: none
+    color: $m-accent
+
+  &-icon
+    display: inline-block
+    background: url('/img/icons/terms-icon.svg') no-repeat center
+    height: 20px
+    width: 20px
+    vertical-align: middle
+    margin-right: 8px
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 article
   margin-bottom: 30px
   background-color: lighten($m-indigo, 20%)
-
+  
 .art
   &-head
     background-color: $m-bluegray
@@ -104,20 +299,12 @@ article
     p
       padding: 0
 
-.ul
-  margin: 0
-  padding: 0
-  list-style: none
 
-.hidden
-  display: none
 
 .img-box
   img
     width: 100%
 
-.mama-i-test-this
-  display: flex
 
 //ALWAYS END
 @import "sass/_media"
