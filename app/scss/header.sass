@@ -24,6 +24,17 @@ header
 
   ul
     text-align: right
+
+    li.logo
+      padding: 0
+      float: left
+      line-height: 60px
+
+      &:after
+        content: ""
+        clear: both
+        display: block
+
     li
       display: inline-block
       padding: 0 25px
@@ -62,14 +73,18 @@ header
       margin-right: 10px
       margin-bottom: 10px
 
+      &:last-child
+        margin-right: 0
+
 .cta-bg
   img
-    position: relative
+    position: absolute
+
 .accent-bg
   background-color: $m-accent
 
 .cta-top-wrapper
-  height: 470px
+  height: 380px
 
 .cta-wrapper
 
@@ -137,11 +152,10 @@ header
 .description
   font-size: 19px
   color: $m-white
-  margin: -30px 0 80px
+  margin: 70px 0
 
   &-section
     background-color: $m-accent
-    margin-top: -90px
     position: relative
 
 .steps
@@ -228,8 +242,12 @@ header
       height: 1px
       background-color: $m-black
 
+  &-wrapp
+    margin: 0px 70px
+
   &-item
     margin-bottom: 40px
+    display: flex
 
   &-img
     height: 135px
@@ -240,6 +258,9 @@ header
     align-items: center
 
   &-text
+    flex: 1
+    margin-left: 15px
+
     h4
       margin: 0 0 10px
       font-size: 15px
@@ -305,34 +326,6 @@ footer
     margin-right: 8px
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-article
-  margin-bottom: 30px
-  background-color: lighten($m-indigo, 20%)
-  
-.art
-  &-head
-    background-color: $m-bluegray
-    padding: 10px 20px
-    h2
-      color: $m-white
-      margin: 0
-
-  &-list
-    @extend .ul
-    color: $m-white
-
-  &-desc
-    background-color: lighten($m-gray, 20%)
-    padding: 10px 20px
-    p
-      padding: 0
-
-
-
-.img-box
-  img
-    width: 100%
 
 
 //ALWAYS END

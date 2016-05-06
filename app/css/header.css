@@ -266,6 +266,18 @@ header ul {
 	text-align: right;
 }
 
+header ul li.logo {
+	line-height: 60px;
+	float: left;
+	padding: 0;
+}
+
+header ul li.logo:after {
+	display: block;
+	clear: both;
+	content: '';
+}
+
 header ul li {
 	display: inline-block;
 	padding: 0 25px;
@@ -313,8 +325,12 @@ header hgroup a {
 	margin-bottom: 10px;
 }
 
+header hgroup a:last-child {
+	margin-right: 0;
+}
+
 .cta-bg img {
-	position: relative;
+	position: absolute;
 }
 
 .accent-bg {
@@ -322,7 +338,7 @@ header hgroup a {
 }
 
 .cta-top-wrapper {
-	height: 470px;
+	height: 380px;
 }
 
 .thin-t {
@@ -362,8 +378,7 @@ header ul li a,
 
 .ul,
 header ul,
-header li,
-.art-list {
+header li {
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -410,13 +425,12 @@ header li,
 
 .description {
 	font-size: 19px;
-	margin: -30px 0 80px;
+	margin: 70px 0;
 	color: #fff;
 }
 
 .description-section {
 	position: relative;
-	margin-top: -90px;
 	background-color: #1ebcd8;
 }
 
@@ -521,7 +535,15 @@ header li,
 	background-color: #000;
 }
 
+.qualif-wrapp {
+	margin: 0 70px;
+}
+
 .qualif-item {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
 	margin-bottom: 40px;
 }
 
@@ -541,6 +563,14 @@ header li,
 	-webkit-align-items: center;
 	-ms-flex-align: center;
 	align-items: center;
+}
+
+.qualif-text {
+	margin-left: 15px;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
 }
 
 .qualif-text h4 {
@@ -623,38 +653,6 @@ footer {
 	background: url('../img/icons/terms-icon.svg') no-repeat center;
 }
 
-article {
-	margin-bottom: 30px;
-	background-color: #8591d5;
-}
-
-.art-head {
-	padding: 10px 20px;
-	background-color: #607d8b;
-}
-
-.art-head h2 {
-	margin: 0;
-	color: #fff;
-}
-
-.art-list {
-	color: #fff;
-}
-
-.art-desc {
-	padding: 10px 20px;
-	background-color: #d1d1d1;
-}
-
-.art-desc p {
-	padding: 0;
-}
-
-.img-box img {
-	width: 100%;
-}
-
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
@@ -679,33 +677,11 @@ article {
 
 /* Large Devices, Wide Screens */
 
-@media only screen and (min-width: 320px) {
-
-/**/
-
-}
-
-@media only screen and (min-width: 480px) {
-
-/**/
-
-}
-
 @media only screen and (min-width: 768px) {
 
-/**/
-
+li.logo {
+	display: none;
 }
-
-@media only screen and (min-width: 992px) {
-
-/**/
-
-}
-
-@media only screen and (min-width: 1200px) {
-
-/**/
 
 }
 
@@ -717,6 +693,10 @@ header ul li {
 
 .steps-img:after {
 	right: -80%;
+}
+
+.qualif-wrapp {
+	margin: 0;
 }
 
 }
@@ -747,13 +727,23 @@ header .header-top-wrapper {
 	margin: 20px 0;
 }
 
-.qualif-item {
-	text-align: center;
-}
-
 .qualif-img {
 	margin: 0 auto;
 	margin-bottom: 15px;
+}
+
+.qualif-item {
+	flex-direction: column;
+	text-align: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	-ms-grid-row-align: center;
+	align-items: center;
 }
 
 /*Disable Animation on Mobile Devices*/
@@ -784,12 +774,16 @@ header .header-top-wrapper {
 	text-align: center;
 }
 
-.logo img {
-	width: 75px;
+.qualif-title {
+	margin-bottom: 25px;
 }
 
 header ul li {
-	padding: 0 8px;
+	padding: 0 8px 0 0;
+}
+
+li.logo img {
+	width: 55px;
 }
 
 header ul li a {
@@ -801,23 +795,37 @@ header ul li a {
 header hgroup h1 {
 	font-size: 36px;
 	line-height: 1.2;
-	margin: 0 0 50px;
+	margin: 50px 0;
 }
 
 header hgroup {
 	margin-top: 0;
-}
-
-header hgroup a {
-	margin-right: 0;
+	margin-bottom: 70px;
 }
 
 .description {
 	font-size: 14px;
 }
 
+.section-title {
+	margin-top: 25px;
+	margin-bottom: 35px;
+}
+
 .section-title h2 {
 	font-size: 16px;
+}
+
+.steps-img {
+	margin: 0 auto 20px;
+}
+
+.steps-item h3 {
+	margin-bottom: 0;
+}
+
+.submit-form {
+	margin-top: 0;
 }
 
 footer {
@@ -832,7 +840,21 @@ footer .terms {
 
 @media only screen and (max-width: 320px) {
 
-/**/
+header hgroup a {
+	margin-right: 0;
+}
+
+header ul li {
+	padding: 0 10px 0 0;
+}
+
+header ul li a {
+	font-size: 10px;
+}
+
+footer {
+	padding: 20px 0;
+}
 
 }
 

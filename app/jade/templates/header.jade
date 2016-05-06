@@ -1,34 +1,37 @@
 .my-preloader.hidden
-    .loader
-        - for (var x = 0; x < 25; x++)
-        div
+	.loader
+		- for (var x = 0; x < 25; x++)
+		div
 
 header
-    .container
-        .header-top-wrapper
-            .row
-                .col-sm-3
-                    .logo
-                        img(src="./img/logo.png" alt="FBBucks")
-                .col-sm-9
-                    ul
-                        each val, index in {1:'Home',2:'About',3:'How it works',4:'Register'}
-                            li
-                                a(href="#")= val
+	.container
+		.header-top-wrapper
+			.row
+				.col-sm-3.hidden-xs
+					.logo
+						img(src="./img/logo.png" alt="FBBucks")
+				.col-sm-9.col-xs-12
+					ul
+						li.logo
+							img(src="./img/logo.png" alt="FBBucks")
+						each val, index in {1:'Home',2:'About',3:'How it works',4:'Register'}
 
-    .container
-        .cta-top-wrapper
-            .row
-                .col-sm-6
-                    .cta-wrapper
-                        hgroup
-                            h1
-                                span.thin-t Earn
-                                span.accent-t  Money
-                                span.thin-t  from <br>
-                                span.thin-t your
-                                |  Facebook Account
-                            a(href="#").m-btn Know more
-                            a(href="#").m-btn Register now
-                .col-sm-6.cta-bg.hidden-xs
-                    img(src="./img/cta-bg.png" alt="Your Wallet")
+							li
+								a(href="#")= val
+
+	.container
+		.cta-top-wrapper
+			.row
+				.col-sm-6
+					.cta-wrapper
+						hgroup
+							h1
+								span.thin-t Earn
+								span.accent-t  Money
+								span.thin-t  from <br>
+								span.thin-t your
+								|  Facebook Account
+							a(href="#").m-btn Know more
+							a(href="#").m-btn Register now
+				.col-sm-6.cta-bg.hidden-xs
+					img(src="./img/cta-bg.png" alt="Your Wallet")

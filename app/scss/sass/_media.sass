@@ -3,140 +3,162 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
-	header ul li
-		padding: 0 15px
+@media only screen and (max-width: 1200px)
+  header ul li
+    padding: 0 15px
 
-	.steps-img:after
-		right: -80%
+  .steps-img:after
+    right: -80%
 
-
+  .qualif-wrapp
+    margin: 0px
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-	section .steps-img:after
-		right: -55%
-
+@media only screen and (max-width: 992px)
+  section .steps-img:after
+    right: -55%
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	section .steps-img:after
-		display: none
+@media only screen and (max-width: 768px)
+  section .steps-img:after
+    display: none
 
-	header .header-top-wrapper
-		margin: 40px 0 40px
+  header .header-top-wrapper
+    margin: 40px 0 40px
 
-	.description-section
-		margin-top: 0px
+  .description-section
+    margin-top: 0px
 
-	.description
-		margin: 20px 0
+  .description
+    margin: 20px 0
 
-	.qualif-item
-		text-align: center
+  .qualif-img
+    margin: 0 auto
+    margin-bottom: 15px
 
-	.qualif-img
-		margin: 0 auto
-		margin-bottom: 15px
+  .qualif-item
+    flex-direction: column
+    text-align: center
+    align-items: center
 
-	/*Disable Animation on Mobile Devices*/
-	.animated
-		/*CSS transitions*/
-		-o-transition-property: none !important
-		-moz-transition-property: none !important
-		-ms-transition-property: none !important
-		-webkit-transition-property: none !important
-		transition-property: none !important
-		/*CSS transforms*/
-		-o-transform: none !important
-		-moz-transform: none !important
-		-ms-transform: none !important
-		-webkit-transform: none !important
-		transform: none !important
-		/*CSS animations*/
-		-webkit-animation: none !important
-		-moz-animation: none !important
-		-o-animation: none !important
-		-ms-animation: none !important
-		animation: none !important
-
+  /*Disable Animation on Mobile Devices*/
+  .animated
+    /*CSS transitions*/
+    -o-transition-property: none !important
+    -moz-transition-property: none !important
+    -ms-transition-property: none !important
+    -webkit-transition-property: none !important
+    transition-property: none !important
+    /*CSS transforms*/
+    -o-transform: none !important
+    -moz-transform: none !important
+    -ms-transform: none !important
+    -webkit-transform: none !important
+    transform: none !important
+    /*CSS animations*/
+    -webkit-animation: none !important
+    -moz-animation: none !important
+    -o-animation: none !important
+    -ms-animation: none !important
+    animation: none !important
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	header .header-top-wrapper
-		margin: 20px 0
+@media only screen and (max-width: 480px)
+  header .header-top-wrapper
+    margin: 20px 0
 
-	.cta-top-wrapper
-		height: 100%
+  .cta-top-wrapper
+    height: 100%
 
-	.cta-wrapper
-		text-align: center
+  .cta-wrapper
+    text-align: center
 
-	.logo
-		img
-			width: 75px
+  .qualif-title
+    margin-bottom: 25px
 
-	header ul li
-		padding: 0 8px
+  header ul li
+    padding: 0 8px 0 0
 
-	header ul li a
-		font-size: 12px
-		line-height: 60px
-		height: 60px
+  li.logo img
+    width: 55px
 
-	header hgroup h1
-		font-size: 36px
-		line-height: 1.2
-		margin: 0 0 50px
+  header ul li a
+    font-size: 12px
+    line-height: 60px
+    height: 60px
 
-	header hgroup
-		margin-top: 0px
+  header hgroup h1
+    font-size: 36px
+    line-height: 1.2
+    margin: 50px 0
 
-	header hgroup a
-		margin-right: 0
+  header hgroup
+    margin-top: 0px
+    margin-bottom: 70px
 
-	.description
-		font-size: 14px
+  .description
+    font-size: 14px
 
-	.section-title h2
-		font-size: 16px
+  .section-title
+    margin-top: 25px
+    margin-bottom: 35px
 
-	footer
-		font-size: 11px
+  .section-title h2
+    font-size: 16px
 
-		.terms
-			margin-top: 10px
+  .steps-img
+    margin: 0 auto 20px
 
+  .steps-item h3
+    margin-bottom: 0
 
+  .submit-form
+    margin-top: 0
+
+  footer
+    font-size: 11px
+
+    .terms
+      margin-top: 10px
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
+@media only screen and (max-width: 320px)
+  header hgroup a
+    margin-right: 0
 
+  header ul li
+    padding: 0 10px 0 0
+
+  header ul li a
+    font-size: 10px
+
+  footer
+    padding: 20px 0
 
 /*==========  Mobile First Method  ==========*/
 
 /* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
+@media only screen and (min-width: 320px)
+  /**/
 
 
 /* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
+@media only screen and (min-width: 480px)
+  /**/
 
 
 /* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
+@media only screen and (min-width: 768px)
+  li.logo
+    display: none
 
 
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
+@media only screen and (min-width: 992px)
+  /**/
 
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
+@media only screen and (min-width: 1200px)
+  /**/
 

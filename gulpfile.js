@@ -42,8 +42,8 @@ gulp.task('sass',function(){
 
 gulp.task('js',function(){
     gulp.src([ // Берем все необходимые библиотеки
-            'app/bower_components/jquery/dist/jquery.min.js',
-            'app/bower_components/magnific-popup/dist/jquery.magnific-popup.min.js'
+            'app/bower_components/jquery/dist/jquery.min.js'
+            //'app/bower_components/magnific-popup/dist/jquery.magnific-popup.min.js'
         ])
         .pipe(plumber({
             handleError: function (err) {
