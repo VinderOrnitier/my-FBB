@@ -131,17 +131,50 @@ body textarea:required:valid {
 
 @media only screen and (max-width: 1200px) {
 
-/**/
+header ul li {
+	padding: 0 15px;
+}
+
+.steps-img:after {
+	right: -80%;
+}
 
 }
 
 @media only screen and (max-width: 992px) {
 
-/**/
+section .steps-img:after {
+	right: -55%;
+}
 
 }
 
 @media only screen and (max-width: 768px) {
+
+section .steps-img:after {
+	display: none;
+}
+
+header .header-top-wrapper {
+	margin: 40px 0 40px;
+}
+
+.description-section {
+	margin-top: 0;
+}
+
+.description {
+	margin: 20px 0;
+}
+
+.qualif-item {
+	text-align: center;
+}
+
+.qualif-img {
+	margin: 0 auto;
+	margin-bottom: 15px;
+}
 
 /*Disable Animation on Mobile Devices*/
 
@@ -159,7 +192,61 @@ body textarea:required:valid {
 
 @media only screen and (max-width: 480px) {
 
-/**/
+header .header-top-wrapper {
+	margin: 20px 0;
+}
+
+.cta-top-wrapper {
+	height: 100%;
+}
+
+.cta-wrapper {
+	text-align: center;
+}
+
+.logo img {
+	width: 75px;
+}
+
+header ul li {
+	padding: 0 8px;
+}
+
+header ul li a {
+	font-size: 12px;
+	line-height: 60px;
+	height: 60px;
+}
+
+header hgroup h1 {
+	font-size: 36px;
+	line-height: 1.2;
+	margin: 0 0 50px;
+}
+
+header hgroup {
+	margin-top: 0;
+}
+
+header hgroup a {
+	margin-right: 0;
+}
+
+.description {
+	font-size: 14px;
+}
+
+.section-title h2 {
+	font-size: 16px;
+}
+
+footer {
+	font-size: 11px;
+}
+
+footer .terms {
+	margin-top: 10px;
+}
 
 }
 
